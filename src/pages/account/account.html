@@ -1,0 +1,30 @@
+<ion-header>
+
+  <ion-navbar color = "primary">
+  <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Account</ion-title>
+  </ion-navbar>
+  </ion-header>
+
+<ion-content padding class="body">
+
+<h3> Create Account </h3>
+  <p> Input Username </p>
+  <ion-item class = "center">
+    <ion-label floating>Username</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+  <p> Input Password </p>
+  <ion-item class = "center">
+    <ion-label floating>Password</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+  <p> The button below does not function yet</p>
+  <div padding class = "center">
+  <button ion-button (click)="presentAlert()">Create Account</button>
+</div>
+</ion-content>
+
+
