@@ -17,3 +17,17 @@
 
 <!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
 <ion-nav [root]="rootPage" #content swipeBackEnabled="True"></ion-nav>
+
+<script src="https://www.gstatic.com/firebasejs/3.7.4/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBE_qZ0U5Uk3z9ESOrZs4SkOX3vyqmZKsI",
+    authDomain: "seniorproject-263f7.firebaseapp.com",
+    databaseURL: "https://seniorproject-263f7.firebaseio.com",
+    projectId: "seniorproject-263f7",
+    storageBucket: "seniorproject-263f7.appspot.com",
+    messagingSenderId: "197664244709"
+  };
+  firebase.initializeApp(config);
+</script>

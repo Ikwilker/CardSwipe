@@ -1,12 +1,12 @@
 import { Component, ViewChild } from '@angular/core';
 import { Nav, Platform } from 'ionic-angular';
 import { StatusBar, Splashscreen } from 'ionic-native';
-
 import { Page1 } from '../pages/page1/page1';
 import { Page2 } from '../pages/page2/page2';
 import { AccountPage } from '../pages/account/account';
 import { SetsPage } from '../pages/sets/sets';
 import { AboutPage } from '../pages/about/about';
+import { firebase } from 'firebase';
 
 @Component({
   templateUrl: 'app.html'

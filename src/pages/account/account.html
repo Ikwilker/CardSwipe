@@ -10,14 +10,17 @@
 
 <ion-content padding class="body">
 
-<h3> Create Account </h3>
+<ion-card class = "centerCards" color = "secondary">
+<ion-card-header class = "topOfCard" color = "primary">
+Create Account Here
+</ion-card-header>
   <p> Input Username </p>
-  <ion-item class = "center">
+  <ion-item color = "secondary">
     <ion-label floating>Username</ion-label>
     <ion-input type="text"></ion-input>
   </ion-item>
   <p> Input Password </p>
-  <ion-item class = "center">
+  <ion-item color = "secondary">
     <ion-label floating>Password</ion-label>
     <ion-input type="text"></ion-input>
   </ion-item>
@@ -25,6 +28,7 @@
   <div padding class = "center">
   <button ion-button (click)="presentAlert()">Create Account</button>
 </div>
+</ion-card>
 </ion-content>
 
 

@@ -8,23 +8,27 @@
 </ion-header>
 
 <ion-content padding class = "body">
-  <h3> Create New Card Set </h3>
-  <p> Card Set Name </p>
-  <ion-item class = "center">
+  <ion-card class = "centerCards" color = "secondary">
+  <ion-card-header class = "topOfCard" color = "primary">
+  Create New Card Set
+  </ion-card-header>
+  <p> Name </p>
+  <ion-item color = "secondary">
     <ion-label floating>Name</ion-label>
     <ion-input type="text"></ion-input>
   </ion-item>
   <p> Class </p>
-  <ion-item class = "center">
+  <ion-item color = "secondary">
     <ion-label floating>Class</ion-label>
     <ion-input type="text"></ion-input>
   </ion-item>
   <p> Description </p>
-  <ion-item class = "center">
+  <ion-item color = "secondary">
     <ion-label floating>Description</ion-label>
     <ion-input type="text"></ion-input>
   </ion-item>
   <div padding class = "center">
   <button ion-button>Create Set</button>
 </div>
+</ion-card>
 </ion-content>

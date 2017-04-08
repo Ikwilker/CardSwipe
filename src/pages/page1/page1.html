@@ -8,12 +8,18 @@
 </ion-header>
 
 <ion-content padding class = "body">
-  <h3>Welcome to Swipe Card!</h3>
+  <h3 color = "secondary">Swipe Card</h3>
 
   <p>
     Recently viewed card sets will display here. Links to them will be here as well. 
   </p>
-  <ion-card>
+  <ion-card class = "centerCards" color = "secondary">
+  <ion-card class = "innerCard">
   <img class = "center" src="assets/img/card.jpg">
+  <div class = "card-title">
+  Recently viewed sets
+  </div>
+  </ion-card>
+  <button ion-button color="primary" round (click)="doAlert()">View All</button>
   </ion-card>
 </ion-content>
