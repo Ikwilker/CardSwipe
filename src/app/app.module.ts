@@ -1,8 +1,8 @@
 import { NgModule, ErrorHandler } from '@angular/core';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
-import { Page1 } from '../pages/page1/page1';
-import { Page2 } from '../pages/page2/page2';
+import { HomePage } from '../pages/home/home';
+import { CreatePage } from '../pages/create/create';
 import { AccountPage} from '../pages/account/account';
 import { SetsPage } from '../pages/sets/sets';
 import { AboutPage } from '../pages/about/about';
@@ -10,8 +10,8 @@ import { AboutPage } from '../pages/about/about';
 @NgModule({
   declarations: [
     MyApp,
-    Page1,
-    Page2,
+    HomePage,
+    CreatePage,
     AccountPage,
     SetsPage,
     AboutPage
@@ -22,8 +22,8 @@ import { AboutPage } from '../pages/about/about';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    Page1,
-    Page2,
+    HomePage,
+    CreatePage,
     AccountPage,
     SetsPage,
     AboutPage
