@@ -35,7 +35,7 @@ export class Page1 {
   doAlert() {
     let alert = this.alerCtrl.create({
       title: 'Sorry!',
-      message: 'Viewing all of the Genres is not implemented just yet. Stick around to see how awesome it will be when it is!',
+      message: 'You havent created any sets yet!',
       buttons: ['Ok']
     });
     alert.present()

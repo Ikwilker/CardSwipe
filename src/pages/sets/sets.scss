@@ -4,14 +4,16 @@ page-sets {
 text-align:center;
 	}
 
-	h3{text-align: center
+	h3{
+		text-align: center;
+		font-size: 50px;
 	}
 
 	p{text-align: center
 	}
 	
 	.body{
-	background-color: #cccccc;
+	background-color: #003399;
 	}
 
 	.center{
@@ -19,4 +21,37 @@ text-align:center;
 	margin-right: auto;
 	display: block;
 		}
+
+	.centerCards {
+    	text-align: center;
+    	shadow: 25px 4px 6px rgba(0, 0, 0, 0.8);
+    	border: 1px #74B3E6;
+    	border-radius: 20px / 20px;
+  }
+
+  .innerCards {
+    	text-align: center;
+    	shadow: 25px 4px 6px rgba(0, 0, 0, 0.8);
+    	border: 1px #74B3E6;
+  }
+
+  .card-title {
+    	text-align: center;
+    	top: 36%;
+    	font-size: 3.0em;
+    	width: 100%;
+    	font-weight: bold;
+    	color: #003399;
+  }
+
+  .cardHeader{
+  	text-align: center;
+  	font-size: 20px;
+  }
+
+  .para{
+		text-align: center;
+		font-size: 20px;
+	}
+	
 }

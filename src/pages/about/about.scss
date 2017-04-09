@@ -11,7 +11,19 @@ page-about {
 	}
 	
 	.body{
-	background-color: #cccccc;
+	background-color: #003399;
 	}
+
+	.centerCards {
+    text-align: center;
+    shadow: 25px 4px 6px rgba(0, 0, 0, 0.8);
+    border: 1px #74B3E6;
+    border-radius: 20px / 20px;
+  }
+  
+  .cardHeader{
+  	text-align: center;
+  	font-size: 20px;
+  }
 
 }
