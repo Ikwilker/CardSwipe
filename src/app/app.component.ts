@@ -2,8 +2,8 @@ import { Component, ViewChild } from '@angular/core';
 import { NgZone } from '@angular/core';
 import { Nav, Platform } from 'ionic-angular';
 import { StatusBar, Splashscreen } from 'ionic-native';
-import { Page1 } from '../pages/page1/page1';
-import { Page2 } from '../pages/page2/page2';
+import { HomePage } from '../pages/home/home';
+import { CreatePage } from '../pages/create/create';
 import { AccountPage } from '../pages/account/account';
 import { SetsPage } from '../pages/sets/sets';
 import { AboutPage } from '../pages/about/about';
@@ -12,22 +12,23 @@ import { ResetPasswordPage } from '../pages/reset-password/reset-password';
 import { AuthData } from '../providers/auth-data';
 import firebase from 'firebase';
 
+
 @Component({
   templateUrl: 'app.html'
 })
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = Page1;
   zone: NgZone;
+  rootPage: any = HomePage;
 
   pages: Array<{title: string, component: any}>;
 
   constructor(public platform: Platform, statusBar: StatusBar, splashScreen: Splashscreen) {
     // used for an example of ngFor and navigation
     this.pages = [
-      { title: 'Home', component: Page1 },
-      { title: 'Create', component: Page2 },
+      { title: 'Home', component: HomePage },
+      { title: 'Create', component: CreatePage },
       { title: 'Account', component: AccountPage },
       { title: 'Sets', component: SetsPage },
       { title: 'About', component: AboutPage },
@@ -52,7 +53,7 @@ export class MyApp {
           this.rootPage = LoginPage;
           unsubscribe();
         } else {
-          this.rootPage = Page1;
+          this.rootPage = HomePage;
           unsubscribe();
         }
       });
