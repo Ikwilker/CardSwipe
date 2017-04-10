@@ -1,11 +1,11 @@
 import { ErrorHandler } from '@angular/core';
 import { IonicErrorHandler } from 'ionic-angular';
 import { AuthData } from '../providers/auth-data';
-import { EventData } from '../providers/event-data';
-import { ProfileData } from '../providers/profile-data';
 
-import { SplashScreen } from '@ionic-native/splash-screen';
-import { StatusBar } from '@ionic-native/status-bar';
+
+
+// import { SplashScreen } from '@ionic-native/splash-screen';
+// import { StatusBar } from '@ionic-native/status-bar';
 
 
 export function GetProviders() {
@@ -15,22 +15,14 @@ export function GetProviders() {
     providers = [
 
       {provide: ErrorHandler, useClass: IonicErrorHandler},
-      AuthData,
-      EventData,
-      ProfileData,
-      SplashScreen,
-      StatusBar
+      AuthData
     ];
   } else {
     // Use device providers
     providers = [
 
       {provide: ErrorHandler, useClass: IonicErrorHandler},
-      AuthData,
-      EventData,
-      ProfileData,
-      SplashScreen,
-      StatusBar
+      AuthData
     ];
   }
   return providers;

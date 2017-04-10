@@ -43,8 +43,8 @@ import { EmailValidator } from '../../validators/email';
 import { HomePage } from '../home/home';
 
 @Component({
-  selector: 'page-signup',
-  templateUrl: 'signup.html'
+  selector: 'page-account',
+  templateUrl: 'account.html'
 })
 export class AccountPage {
   public signupForm;

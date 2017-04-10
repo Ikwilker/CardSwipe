@@ -1,7 +1,7 @@
 import { Component, ViewChild } from '@angular/core';
 import { NgZone } from '@angular/core';
 import { Nav, Platform } from 'ionic-angular';
-import { StatusBar, Splashscreen } from 'ionic-native';
+// import { StatusBar, Splashscreen } from 'ionic-native';
 import { HomePage } from '../pages/home/home';
 import { CreatePage } from '../pages/create/create';
 import { AccountPage } from '../pages/account/account';
@@ -10,7 +10,7 @@ import { AboutPage } from '../pages/about/about';
 import { LoginPage } from '../pages/login/login';
 import { ResetPasswordPage } from '../pages/reset-password/reset-password';
 import { AuthData } from '../providers/auth-data';
-import firebase from 'firebase';
+import * as firebase from 'firebase';
 
 
 @Component({
@@ -24,7 +24,7 @@ export class MyApp {
 
   pages: Array<{title: string, component: any}>;
 
-  constructor(public platform: Platform, statusBar: StatusBar, splashScreen: Splashscreen) {
+  constructor(public platform: Platform) {
     // used for an example of ngFor and navigation
     this.pages = [
       { title: 'Home', component: HomePage },
@@ -63,8 +63,8 @@ export class MyApp {
     platform.ready().then(() => {
       // Okay, so the platform is ready and our plugins are available.
       // Here you can do any higher level native things you might need.
-      StatusBar.styleDefault();
-      Splashscreen.hide();
+      // StatusBar.styleDefault();
+      // Splashscreen.hide();
     });
   }
 
