@@ -36,6 +36,9 @@ Create Account Here
 
  <ion-header>
    <ion-navbar color="primary">
+     <button ion-button menuToggle>
+         <ion-icon name="menu"></ion-icon>
+       </button> 
      <ion-title>
        Create an Account
      </ion-title>
@@ -44,7 +47,7 @@ Create Account Here
 
 
  <ion-content padding>
-   <img src="http://placehold.it/300x100">
+
    <form [formGroup]="signupForm" (submit)="signupUser()" novalidate>
 
      <ion-item>
