@@ -9,7 +9,8 @@ import { SetsPage } from '../pages/sets/sets';
 import { AboutPage } from '../pages/about/about';
 import { LoginPage } from '../pages/login/login';
 import { ResetPasswordPage } from '../pages/reset-password/reset-password';
-import { AuthData } from '../providers/auth-data';
+import { ProfilePage } from '../pages/profile/profile';
+
 import * as firebase from 'firebase';
 
 
@@ -29,11 +30,12 @@ export class MyApp {
     this.pages = [
       { title: 'Home', component: HomePage },
       { title: 'Create', component: CreatePage },
-      { title: 'Account', component: AccountPage },
       { title: 'Sets', component: SetsPage },
-      { title: 'About', component: AboutPage },
       { title: 'Login', component: LoginPage },
-      { title: 'Reset Password', component: ResetPasswordPage }
+      { title: 'Account', component: AccountPage },
+      { title: 'Profile', component: ProfilePage },
+      { title: 'Reset Password', component: ResetPasswordPage },
+      { title: 'About', component: AboutPage }
     ];
 
     this.zone = new NgZone({});

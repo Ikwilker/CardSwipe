@@ -11,19 +11,19 @@ import { AboutPage } from '../pages/about/about';
 import { GetProviders } from './app.providers';
 import { LoginPage } from '../pages/login/login';
 import { ResetPasswordPage } from '../pages/reset-password/reset-password';
-import { AngularFireModule } from 'angularfire2';
-import { AuthData } from '../providers/auth-data';
-import  firebase from 'firebase';
+import { ProfilePage } from '../pages/profile/profile';
+
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
     CreatePage,
-    AccountPage,
     SetsPage,
-    AboutPage,
     LoginPage,
-    ResetPasswordPage
+    AccountPage,
+    ProfilePage,
+    ResetPasswordPage,
+    AboutPage
   ],
   imports: [
     IonicModule.forRoot(MyApp),
@@ -34,11 +34,13 @@ import  firebase from 'firebase';
     MyApp,
     HomePage,
     CreatePage,
-    AccountPage,
     SetsPage,
-    AboutPage,
     LoginPage,
-    ResetPasswordPage
+    AccountPage,
+    ProfilePage,
+    ResetPasswordPage,
+    AboutPage
+
   ],
   providers: GetProviders()
 })
