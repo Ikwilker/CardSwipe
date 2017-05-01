@@ -16,12 +16,7 @@ export class ProfilePage {
     public authData: AuthData, public alertCtrl: AlertController) {
   }
 
-  ionViewDidEnter(){
-    this.profileData.getUserProfile().on('value', (data) => {
-      this.userProfile = data.val();
-      this.birthDate = this.userProfile.birthDate;
-    });
-  }
+
 
   logOut(){
     this.authData.logoutUser().then(() => {
@@ -59,9 +54,7 @@ export class ProfilePage {
     alert.present();
   }
 
-  updateDOB(birthDate){
-    this.profileData.updateDOB(birthDate);
-  }
+
 
   updateEmail(){
     let alert = this.alertCtrl.create({
