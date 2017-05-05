@@ -9,11 +9,18 @@ import { SetsPage } from '../pages/sets/sets';
 import { AboutPage } from '../pages/about/about';
 import { LoginPage } from '../pages/login/login';
 import { ResetPasswordPage } from '../pages/reset-password/reset-password';
+<<<<<<< HEAD
 import { ProfilePage } from '../pages/profile/profile';
 import { AuthData } from '../providers/auth-data';
 import { ProfileData } from '../providers/profile-data';
 import { EventData } from '../providers/event-data';
 
+||||||| merged common ancestors
+import { AuthData } from '../providers/auth-data';
+=======
+import { ProfilePage } from '../pages/profile/profile';
+
+>>>>>>> 66995aacf8839b371d5d8af0f79d9cc6480544b0
 import * as firebase from 'firebase';
 
 
@@ -33,12 +40,19 @@ export class MyApp {
     this.pages = [
       { title: 'Home', component: HomePage },
       { title: 'Create', component: CreatePage },
-      { title: 'Account', component: AccountPage },
       { title: 'Sets', component: SetsPage },
-      { title: 'About', component: AboutPage },
       { title: 'Login', component: LoginPage },
+<<<<<<< HEAD
       { title: 'Reset Password', component: ResetPasswordPage },
       { title: 'Profile', component: ProfilePage }
+||||||| merged common ancestors
+      { title: 'Reset Password', component: ResetPasswordPage }
+=======
+      { title: 'Account', component: AccountPage },
+      { title: 'Profile', component: ProfilePage },
+      { title: 'Reset Password', component: ResetPasswordPage },
+      { title: 'About', component: AboutPage }
+>>>>>>> 66995aacf8839b371d5d8af0f79d9cc6480544b0
     ];
 
     this.zone = new NgZone({});
